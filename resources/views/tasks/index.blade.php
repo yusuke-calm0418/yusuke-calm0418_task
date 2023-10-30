@@ -50,7 +50,7 @@
             <input type="text" name="title" id="title" value="{{ old('title') }}">
         </p>
         <p>
-            <label for="body">本文</label><br>
+            <label for="body">内容</label><br>
             <textarea name="body" class="body" id="body">{{ old('body') }}</textarea>
         </p>
 
