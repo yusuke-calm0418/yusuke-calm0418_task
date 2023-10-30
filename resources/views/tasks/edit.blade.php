@@ -27,7 +27,6 @@
         </div>
     @endif
 
-
     <form action="{{ route('tasks.update', $task) }}" method="post">
         @csrf
         @method('PATCH')
@@ -38,12 +37,16 @@
         <p>
             <label for="body">本文</label><br>
             <textarea name="body" class="body" id="body">{{ old('body', $task->body) }}</textarea>
-
         </p>
 
-        <input type="submit" value="更新">
-        <button onclick='location.href="{{ route('tasks.show', $task) }}"'>詳細に戻る</button>
+        <div class="button-group">
+            <input type="submit" value="更新">
+            <button type="button" onclick='location.href="{{ route("tasks.show", $task) }}"'>詳細に戻る</button>
+        </div>
+
     </form>
+
+
 </body>
 
 
