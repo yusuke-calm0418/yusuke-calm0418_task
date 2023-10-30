@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.body {
+    width: 300px;
+    height: 100px;
+}
+
+.action-button {
+    display: inline-block;
+    margin-right: 10px;
+    /* ボタン間の間隔を調整 */
+}
+
+.button-group {
+    display: flex;
+}
+
+.button-group>*:not(:last-child) {
+    margin-right: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.error {
+    color: red;
+}
